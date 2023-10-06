@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  --font-family-1: "League Spartan", sans-serif;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 15px;
+  font-family: var(--font-family-1);
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 64vw bottom 50vh, left 37vw top 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  max-width: 1120px;
+  padding: 35px;
+  margin: 0 auto;
+}
+.row1 {
+  display: flex;
+}
+.colum1 {
+  width: 25rem;
+}
+
+.colum2 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.colum1 h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: xxx-large;
+  line-height: 1;
+}
+.colum1 p {
+  color: var(--Dark-Grayish-Magenta);
+  margin-top: 20px;
+}
+.rating1 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+  display: flex;
+  gap: 25px;
+  padding: 15px 30px;
+}
+.rating1 p {
+  font-weight: bold;
+  color: var(--Very-Dark-Magenta);
+}
+.starimage {
+  width: 15px;
+}
+
+.rating2 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+  display: flex;
+  gap: 25px;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+.rating2 p {
+  font-weight: bold;
+  color: var(--Very-Dark-Magenta);
+}
+
+.rating3 {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 10px;
+  display: flex;
+  gap: 25px;
+  padding: 15px 30px;
+  margin-top: 20px;
+}
+.rating3 p {
+  font-weight: bold;
+  color: var(--Very-Dark-Magenta);
+}
+
+.row2 {
+  display: flex;
+  gap: 24px;
+  margin-top: 30px;
+}
+.innerbox1 {
+  background-color: var(--Very-Dark-Magenta);
+}
+.head1 {
+  display: flex;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.innerbox1 {
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.head1 .image img {
+  border-radius: 50%;
+  width: 40px;
+}
+.head1 {
+  gap: 20px;
+}
+.about {
+  line-height: 1.2rem;
+}
+.name {
+  color: white;
+  font-weight: 500;
+}
+.posiotn {
+  color: var(--Soft-Pink);
+  font-weight: 100;
+}
+.content {
+  color: white;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.colum3 {
+  width: 323px;
+}
+.colum4 {
+  margin-top: 15px;
+  width: 323px;
+}
+.colum5 {
+  margin-top: 30px;
+  width: 323px;
+}
+.third,
+.second,
+.first {
+  display: flex;
+  gap: 8px;
+}
+.rating2:nth-child(2) {
+  transform: translateX(3.5rem);
+}
+.rating3:nth-child(3) {
+  transform: translateX(6.5rem);
+}
+@media screen and (max-width: 768px) {
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rating2:nth-child(2) {
+    transform: translateX(0rem);
+  }
+  .rating3:nth-child(3) {
+    transform: translateX(0rem);
+  }
+  .colum2 {
+    margin: 0;
+    padding: 0;
+  }
+  .rating1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .rating2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+  }
+  .rating3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+  }
+  .colum4 {
+    margin-top: 15px;
+  }
+  .colum5 {
+    margin-top: 15px;
+  }
+  .colum1 h1 {
+    text-align: center;
+  }
+  .colum1 p {
+    text-align: center;
+  }
+  .name{
+    font-weight: 900;
+    font-size: 16px;
+  }
+}
